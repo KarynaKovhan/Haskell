@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Haskell</title>
+    <link href="../styles/index.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+        <h1>USING HASKELL <br>
+            WITH 5- TO 7-YEAR-OLDS</h1>
+            <h3>Ian Benson and Jenny Cane show how Haskell helps learners to reason symbolically with <br>
+              Cuisenaire-Gattegno Mathematics: a proven approach to teaching algebra before arithmetic</h3>
+      </header>
+        <main class="container">
+        <p>At Bursted Wood Primary School, 
+          children in key stage 1 had already 
+          embarked on a secure mathematical 
+          journey, putting algebra at the heart of 
+          the curriculum. The demands of the 2014 
+          National Curriculum meant that in Year 1 
+          children were expected to be taught to use 
+          all four arithmetic operations, and fractions, 
+          as operators. As a result, Bursted Wood 
+          adopted a series of textbooks written by 
+          Caleb Gattegno called <em>Numbers in Colours.</em> 
+          These textbooks use Cuisenaire rods to 
+          encourage the learner to explore patterns, 
+          and then to give letter code names to the 
+          patterns, and record the relationships 
+          between them with equations. It is only 
+          after the letter code exploration that they 
+          finally use a rod as a unit of measure (e.g. 
+          white representing one), and transform 
+          their equations into arithmetic. Very early 
+          on in Year 1, children are able to read 
+          and write a variety of complex algebraic</p>
+          <img src="../images/diagram.png"
+          <aside><li> The ten Cuisenaire rods arranged in order <br>
+            as a staircase with step size White</li>
+            </aside>
+          <p>equations using plus, minus, multiply, 
+            and fractions as operators, and translate 
+            these into arithmetic. The results had been 
+            impressive throughout key stage 1. In 
+            Year 2 we wanted to take it a step further 
+            by running computing lessons using the 
+            same use of natural language and level 
+            of sophistication.
+            <h3>Why Haskell?</h3>
+            Haskell is closely aligned to conceptual 
+            mathematics and number theory, the 
+            inspiration for Gattegno Mathematics. It has 
+            four attributes that make it particularly 
+            appropriate for mathematics education:
+            <ul>
+              <li>Its syntax is very close to traditional 
+                mathematical notation (but beware 
+                that it can be too terse).</li>
+              <li>Variables are statically typed, which 
+                means that programmers are protected 
+                by the compiler from passing invalid 
+                information as an argument (input) or 
+                output value.</li>
+              <li>The Haskell interpreter evaluates functions 
+                ‘lazily’, only when required. This makes 
+                it possible to program infinite data 
+                structures in finite memory.</li>
+              <li>Information is passed from the arguments 
+                to functions by pattern matching. This 
+                is an intuitive way for programmers to 
+                envisage and reason about the behaviour 
+                of their programs.</li>
+            </ul>
+            <img src="../images/equation.png" 
+            <aside><li>Equivalent expressions using Gattegno’s rod codes to represent the 
+              relationship between a rod and equivalent trains of one colour </li>
+              </aside>
+            <p><h3>Starting with a staircase</h3>
+            To start, we went back to a familiar pattern 
+            that Gattegno introduces in the textbooks, 
+            called a staircase. This is built from one rod 
+            of each colour arranged in size order (figure 
+            1). The children were able to physically build 
+            the staircase. However, because they were 
+            so familiar with the pattern, they could also 
+            access it virtually, which would help with 
+            debugging and logical reasoning later. 
+            A role-play game to establish 
+            computational thinking was introduced 
+            before any actual programming began. This 
+            allowed the children to familiarise themselves 
+            with the function calls <em>successor</em> and 
+            <em>predecessor (succ, pred)</em> while traversing 
+            the staircase. The children would take turns 
+            to ask each other questions such as <em>succ 
+            White</em> (answer Red) or <em>pred Orange</em>
+            (answer Blue). To help the children access 
+            the new programming vocabulary, one child</p>
+            </main>
+  </body>
+</html>
