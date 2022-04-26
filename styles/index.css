@@ -1,7 +1,71 @@
+
+html {
+  font-family: 'Akshar', sans-serif;
+}
+
+body {
+  margin: 0 100px;
+}
+
+header {
+  text-align: center;
+}
+
 .container {
   column-count: 3;
   column-gap: 20px;
   column-rule: 4px dotted rgb(136, 137, 142);
+}
+.second-container {
+  margin-top: 20px;
+  column-count: 2;
+  column-gap: 20px;
+  column-rule: 4px dotted rgb(136, 137, 142);
+}
+span {
+  color: gray;
+  font-size: 10px;
+}
+.line {
+  margin-top: 10px;
+  border-bottom: 4px dotted rgb(136, 137, 142);
+}
+.some-text {
+  font-size: 70px;
+  margin: 140px 100px 0 100px;
+  color: purple;
+}
+.title  {
+  overflow: hidden;
+  text-align: center;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+.title:before,
+.title:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    border-bottom: 4px dotted rgb(136, 137, 142);
+    position: relative;
+}
+.title:before {
+    margin-left: -100%;
+    left: -14px;
+}
+.title:after {
+    margin-right: -100%;
+    right: -14px;
+}
+.image {
+  width: 100%;
+}
+.some-image {
+  height: 40px;
+  width: 40px;
+  float: right;
+  margin: 7px 7px 7px 0;
 }
 h1 {
   font-size: 60px; 
@@ -14,11 +78,29 @@ h3 {
   font-family: 'Akshar', sans-serif;
   text-align: center;
 }
-html {
-  font-family: 'Akshar', sans-serif;
-}
+
 li::before {
   color: #E40F0F;
   content: "■"
 }
 ul {list-style: none}
+.imgblock {
+  position: relative;
+  display: inline-block;
+}
+.imgblock img {
+  height: 360px;
+  width: 280px;
+}
+.imgblock span {
+  float: left;
+  margin: 7px 7px 7px 0;
+  background: #222;
+  color: #fff;
+  border-radius: 2px;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  font-size: 13px;
+  padding: 10px 5px;
+}
