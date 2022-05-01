@@ -10,7 +10,6 @@ body {
 header {
   text-align: center;
 }
-
 .container {
   column-count: 3;
   column-gap: 20px;
@@ -22,6 +21,7 @@ header {
   column-gap: 20px;
   column-rule: 4px dotted rgb(136, 137, 142);
 }
+
 span {
   color: gray;
   font-size: 10px;
@@ -103,4 +103,14 @@ ul {list-style: none}
   bottom: 10px;
   font-size: 13px;
   padding: 10px 5px;
+}
+p2 {font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 155%;
+/* identical to box height, or 22px */
+
+display: flex;
+align-items: center;
 }
