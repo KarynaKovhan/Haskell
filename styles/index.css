@@ -1,5 +1,6 @@
 
 html {
+  line-height: 1.5 ;
   font-family: 'Akshar', sans-serif;
 }
 
@@ -31,9 +32,16 @@ span {
   border-bottom: 4px dotted rgb(136, 137, 142);
 }
 .some-text {
+  line-height: 1;
   font-size: 70px;
   margin: 140px 100px 0 100px;
-  color: purple;
+  color: rgb(50, 49, 50);
+}
+h2 {
+ 
+  font-weight: lighter;
+  letter-spacing: -1px;
+
 }
 .title  {
   overflow: hidden;
@@ -73,6 +81,7 @@ h1 {
   text-align: center;
 }
 h3 {
+  letter-spacing: -3px;
   padding-top: 30px;
   font-size: 30px; 
   font-family: 'Akshar', sans-serif;
@@ -113,4 +122,10 @@ line-height: 155%;
 
 display: flex;
 align-items: center;
+}
+.quote {
+  line-height: 1;
+  letter-spacing: -2px;
+  color: gray;
+  font-size: 30px;
 }
