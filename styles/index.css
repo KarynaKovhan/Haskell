@@ -1,6 +1,6 @@
 
 html {
-  line-height: 1.5 ;
+  line-height: 1.5;
   font-family: 'Akshar', sans-serif;
 }
 
@@ -22,34 +22,37 @@ header {
   column-gap: 20px;
   column-rule: 4px dotted rgb(136, 137, 142);
 }
-
 span {
   color: gray;
   font-size: 10px;
 }
+
 .line {
   margin-top: 10px;
   border-bottom: 4px dotted rgb(136, 137, 142);
 }
+
 .some-text {
   line-height: 1;
   font-size: 70px;
-  margin: 140px 100px 0 100px;
+  margin: 140px 100px 0;
   color: rgb(50, 49, 50);
 }
+
 h2 {
- 
   font-weight: lighter;
   letter-spacing: -1px;
-
 }
+
 .title  {
   overflow: hidden;
   text-align: center;
   font-size: 10px;
   margin-bottom: 10px;
 }
+
 .title:before,
+
 .title:after {
     content: "";
     display: inline-block;
@@ -58,17 +61,21 @@ h2 {
     border-bottom: 4px dotted rgb(136, 137, 142);
     position: relative;
 }
+
 .title:before {
     margin-left: -100%;
     left: -14px;
 }
+
 .title:after {
     margin-right: -100%;
     right: -14px;
 }
+
 .image {
   width: 100%;
 }
+
 .some-image {
   height: 40px;
   width: 40px;
@@ -97,10 +104,12 @@ ul {list-style: none}
   position: relative;
   display: inline-block;
 }
+
 .imgblock img {
   height: 360px;
   width: 280px;
 }
+
 .imgblock div {
   float: left;
   margin: 7px 1px 7px 0;
@@ -113,6 +122,7 @@ ul {list-style: none}
   font-size: 13px;
   padding: 10px 5px;
 }
+
 .quote {
   line-height: 1;
   letter-spacing: -2px;
@@ -120,29 +130,35 @@ ul {list-style: none}
   font-size: 33px;
   padding-top: 20px;
 }
+
 blockquote::before {
   content: '\201c';
   color: #fff;
   background-color: rgb(13, 13, 13);
   font-weight: 100%;
 }
+
 .third-container {
   column-count: 2;
   column-gap: 20px;
   column-rule: 4px dotted rgb(136, 137, 142);
 }
+
 .fourth-container {
   column-count: 2;
   column-gap: 20px;
   column-rule: 4px dotted rgb(136, 137, 142);
 }
+
 .caption {
   background-image: url(../images/wheretogo.png);
  font-size: 25px;
 }
+
 .block {
 padding-right: 40%;
 }
+
 .blackdot {
   padding: 10px; 
   margin-bottom: -13%;
