@@ -1,4 +1,3 @@
-
 html {
   line-height: 1.5;
   font-family: 'Akshar', sans-serif;
@@ -11,20 +10,31 @@ body {
 header {
   text-align: center;
 }
+
 .container {
   column-count: 3;
   column-gap: 20px;
   column-rule: 4px dotted rgb(136, 137, 142);
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
+
 .second-container {
   margin-top: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
   column-count: 2;
   column-gap: 20px;
   column-rule: 4px dotted rgb(136, 137, 142);
+
 }
+
 span {
   color: gray;
   font-size: 10px;
+  line-height: 1;
 }
 
 .line {
@@ -34,14 +44,17 @@ span {
 
 .some-text {
   line-height: 1;
-  font-size: 70px;
-  margin: 140px 100px 0;
+  color: rgb(50, 49, 50);
+  font-size: 75px;
+  margin: 140px 240px 0px ;
   color: rgb(50, 49, 50);
 }
 
 h2 {
   font-weight: lighter;
   letter-spacing: -1px;
+  margin-right: 200px;
+  margin-left: 200px;
 }
 
 .title  {
@@ -49,10 +62,11 @@ h2 {
   text-align: center;
   font-size: 10px;
   margin-bottom: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .title:before,
-
 .title:after {
     content: "";
     display: inline-block;
@@ -74,35 +88,51 @@ h2 {
 
 .image {
   width: 100%;
+  position: relative;
 }
 
+#at {
+  position	: absolute;
+  text-align : center;
+  font-size: 30px;
+  color: rgb(222, 17, 96);
+  padding-left: 10px;
+}
 .some-image {
   height: 40px;
   width: 40px;
-  float: right;
-  margin: 7px 7px 7px 0;
+  float: left;
+  margin: 0px 7px 7px 0;
 }
+
 h1 {
   font-size: 60px; 
   font-family: 'Akshar', sans-serif;
   text-align: center;
 }
+
 h3 {
   letter-spacing: -3px;
   padding-top: -3px;
   font-size: 29px; 
   font-family: 'Akshar', sans-serif;
-  text-align: center;
+  text-align: left;
 }
 
 li::before {
   color: #E40F0F;
   content: "■"
 }
-ul {list-style: none}
+
+ul {
+  padding: 0px;
+  list-style: none
+}
+
 .imgblock {
   position: relative;
   display: inline-block;
+  padding: 15px;
 }
 
 .imgblock img {
@@ -118,7 +148,7 @@ ul {list-style: none}
   border-radius: 2px;
   position: absolute;
   right: 0;
-  bottom: -15px;
+  bottom: 15px;
   font-size: 13px;
   padding: 10px 5px;
 }
@@ -128,7 +158,11 @@ ul {list-style: none}
   letter-spacing: -2px;
   color: gray;
   font-size: 33px;
-  padding-top: 20px;
+  padding-top: 0px;
+  margin-left: -44px;
+  margin-right: -14px;
+  margin: -45px;
+  margin-bottom: -25px;
 }
 
 blockquote::before {
@@ -140,8 +174,10 @@ blockquote::before {
 
 .third-container {
   column-count: 2;
-  column-gap: 20px;
+  column-gap: 50px;
   column-rule: 4px dotted rgb(136, 137, 142);
+  margin-right: 0px;
+    margin-left: 0px
 }
 
 .fourth-container {
