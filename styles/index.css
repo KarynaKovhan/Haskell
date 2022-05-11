@@ -15,20 +15,13 @@ header {
   column-count: 3;
   column-gap: 20px;
   column-rule: 4px dotted rgb(136, 137, 142);
-  margin-right: 200px;
-  margin-left: 200px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 5px 200px;
 }
 
 .second-container {
-  margin-top: 20px;
-  margin-left: 200px;
-  margin-right: 200px;
-  column-count: 2;
-  column-gap: 20px;
-  column-rule: 4px dotted rgb(136, 137, 142);
-
+  margin: 20px 200px 0;
+display: flex;
+flex-direction: row;
 }
 
 span {
@@ -53,17 +46,14 @@ span {
 h2 {
   font-weight: lighter;
   letter-spacing: -1px;
-  margin-right: 200px;
-  margin-left: 200px;
+  margin: 0 200px;
 }
 
 .title  {
   overflow: hidden;
   text-align: center;
   font-size: 10px;
-  margin-bottom: 10px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin: 0 200px 10;
 }
 
 .title:before,
@@ -159,31 +149,21 @@ ul {
   color: gray;
   font-size: 33px;
   padding-top: 0px;
-  margin-left: -44px;
-  margin-right: -14px;
   margin: -45px;
-  margin-bottom: -25px;
 }
 
 blockquote::before {
   content: '\201c';
   color: #fff;
   background-color: rgb(13, 13, 13);
-  font-weight: 100%;
+  font-weight: 900%;
 }
 
 .third-container {
-  column-count: 2;
-  column-gap: 50px;
-  column-rule: 4px dotted rgb(136, 137, 142);
+  display: flex;
+  flex-direction: row;
   margin-right: 0px;
     margin-left: 0px
-}
-
-.fourth-container {
-  column-count: 2;
-  column-gap: 20px;
-  column-rule: 4px dotted rgb(136, 137, 142);
 }
 
 .caption {
@@ -196,7 +176,53 @@ padding-right: 40%;
 }
 
 .blackdot {
-  padding: 10px; 
-  margin-bottom: -13%;
-  width: 8%;
+  padding: 41px;
+    margin-bottom: -13%;
+    width: 6%;
+    margin-bottom: -124px;
+    margin-left: -19px;
+}
+
+#line1 {
+margin-top: 10px;
+border-bottom: 4px dotted rgb(136, 137, 142);
+margin-right: 135px;
+}
+
+.container-1 {
+  padding-right: 200px;
+   display: flex;
+}
+
+.container-1 div {
+  padding: 10px;
+  border: 0px solid silver;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+#textik {
+  padding: 20px;
+}
+
+.container-3 {
+  padding-right: 970px;
+  float: left;
+
+}
+#section2 {
+  padding: 10px;
+  display: flex;
+}
+
+.second-container {
+  float: left;
+  display: block;
+  padding-left: 200px;
+margin-left: 200px;
+width: 1000px;
+margin: 2px;
+margin-right: -140px;
 }
