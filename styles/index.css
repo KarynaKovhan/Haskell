@@ -9,20 +9,24 @@ body {
 
 header {
   text-align: center;
+  margin: 0px;
 }
 
 .container {
   column-count: 3;
   column-gap: 20px;
   column-rule: 4px dotted rgb(136, 137, 142);
-  margin: 5px 200px;
+  margin: 5px;
 }
 
-.second-container {
-  margin: 20px 200px 0;
-  display: flex;
-  flex-direction: row;
-  width: 950px;
+.second-page {
+  float: left;
+  display: block;
+    padding-left: 13px;
+    margin-left: 200px;
+    width: 1000px;
+    margin: 2px;
+    margin-right: -140px;
 }
 
 span {
@@ -40,14 +44,15 @@ span {
   line-height: 1;
   color: rgb(50, 49, 50);
   font-size: 75px;
-  margin: 140px 240px 0px;
+  margin: 20px 240px 0px;
   color: rgb(50, 49, 50);
 }
 
 h2 {
   font-weight: lighter;
   letter-spacing: -1px;
-  margin: 0 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .title {
@@ -244,7 +249,7 @@ h4 {
   border-left: 4px dotted rgb(136, 137, 142);
   height: 1390px;
   float: left;
-  margin-left: 5px;
+  margin-left: 6px;
 }
 
 #lightstring {
