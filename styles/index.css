@@ -23,10 +23,9 @@ header {
   float: left;
   display: block;
     padding-left: 13px;
-    margin-left: 200px;
-    width: 1000px;
-    margin: 2px;
-    margin-right: -140px;
+    width: 950px;
+    margin: 2px 0px 0px 0px;
+
 }
 
 span {
@@ -51,8 +50,7 @@ span {
 h2 {
   font-weight: lighter;
   letter-spacing: -1px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0px 20px 0px;
 }
 
 .title {
@@ -118,22 +116,25 @@ h3 {
 li::before {
   color: #e40f0f;
   content: "■";
+  line-height: 3;
 }
 
 ul {
   padding: 0px;
   list-style: none;
+  line-height: 2;
 }
 
 .imgblock {
   position: relative;
   display: inline-block;
-  padding: 15px;
+  padding: 20px;
 }
 
 .imgblock img {
-  height: 360px;
-  width: 280px;
+  height: 680px;
+    width: 288px;
+ 
 }
 
 .imgblock div {
@@ -145,7 +146,7 @@ ul {
   position: absolute;
   right: 0;
   bottom: 15px;
-  font-size: 13px;
+  font-size: 18px;
   padding: 10px 5px;
 }
 
@@ -168,8 +169,7 @@ blockquote::before {
 .third-container {
   display: flex;
   flex-direction: row;
-  margin-right: 0px;
-  margin-left: 0px;
+  margin: 0px 0px;
 }
 
 .caption {
@@ -183,16 +183,9 @@ blockquote::before {
 
 .blackdot {
   padding: 41px;
-  margin-bottom: -13%;
-  width: 6%;
   margin-bottom: -124px;
+  width: 6%;
   margin-left: -19px;
-}
-
-#line1 {
-  margin-top: 10px;
-  border-bottom: 4px dotted rgb(136, 137, 142);
-  margin-right: 135px;
 }
 
 .container-1 {
@@ -219,19 +212,8 @@ h4 {
 }
 
 #section2 {
-  padding: 10px;
+  padding: 100px 100px 10px 10px;
   display: flex;
-  padding-right: 220px;
-}
-
-.second-container {
-  float: left;
-  display: block;
-  padding-left: 200px;
-  margin-left: 200px;
-  width: 1000px;
-  margin: 2px;
-  margin-right: -140px;
 }
 
 #line10 {
@@ -253,6 +235,16 @@ h4 {
 }
 
 #lightstring {
-  width: 14px;
-  height: 342px;
+  width: 10px;
+  height: 743px;
+}
+
+.helper-text {
+  display: flex;
+  float: inline-end;
+}
+
+li > a {
+  font-size: 22px;
+  text-decoration:none
 }
