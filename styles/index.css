@@ -112,17 +112,19 @@ h3 {
   font-family: "Akshar", sans-serif;
   text-align: left;
 }
-
+ li {
+  line-height: 2;
+  text-indent: 20px;
+  margin: 2em 0 2em 0;
+ }
 li::before {
   color: #e40f0f;
   content: "■";
-  line-height: 3;
 }
 
 ul {
   padding: 0px;
   list-style: none;
-  line-height: 2;
 }
 
 .imgblock {
@@ -132,8 +134,8 @@ ul {
 }
 
 .imgblock img {
-  height: 680px;
-    width: 288px;
+  height: 520px;
+    width: 340px;
  
 }
 
@@ -146,7 +148,7 @@ ul {
   position: absolute;
   right: 0;
   bottom: 15px;
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px 5px;
 }
 
@@ -212,7 +214,7 @@ h4 {
 }
 
 #section2 {
-  padding: 100px 100px 10px 10px;
+  padding: 135px 100px 10px 10px;
   display: flex;
 }
 
@@ -236,7 +238,7 @@ h4 {
 
 #lightstring {
   width: 10px;
-  height: 743px;
+  height: 615px;
 }
 
 .helper-text {
@@ -246,5 +248,9 @@ h4 {
 
 li > a {
   font-size: 22px;
-  text-decoration:none
+  text-decoration:none;
+  color: white;
+  font-size: larger;
+  line-height: normal;
 }
+
