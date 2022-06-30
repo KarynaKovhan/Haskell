@@ -1,10 +1,16 @@
+:root {
+  --red-color: #e40f0f;
+  --color-line: rgb(136, 137, 142);
+  --dark-gray: rgb(50, 49, 50);
+  --line: 4px dotted var(--color-line);
+}
+
 html {
-  line-height: 1.5;
   font-family: "Akshar", sans-serif;
 }
 
 body {
-  margin: 0 100px;
+  margin: 0 150px;
 }
 
 header {
@@ -12,52 +18,138 @@ header {
   margin: 0;
 }
 
+h2 {
+  font-size: 35px;
+  font-weight: lighter;
+}
+
+h3 {
+  letter-spacing: -2px;
+  font-size: 28px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 0;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+li {
+  line-height: 1.5;
+  text-indent: -1em;
+  margin: 2em 0 2em 1em;
+ }
+
+li::before {
+  color: var(--red-color);
+  content: "■";
+}
+
+li > a {
+  font-size: 22px;
+  text-decoration:none;
+  color: white;
+  font-size: larger;
+  line-height: normal;
+}
+
+span {
+  display: block;
+  color: var(--dark-gray);
+  font-size: 12px;
+  letter-spacing: -0.5px;
+  text-indent: -0.5em;
+  margin: 2em 0 2em 2em;
+}
+
+span::before {
+  display: inline-block;
+  margin-right: 2px;
+  color: var(--red-color);
+  content: "■";
+}
+
+.red-text {
+  color: var(--red-color);
+}
+
+.letter-a {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px 0 0;
+  float: left;
+  background-color: black;
+  text-align: center;
+  font-size: 45px;
+  color: var(--red-color);
+}
+
+.diagram {
+  display: block;
+  margin: 0 auto;
+}
+
+.article-title {
+  margin-bottom: 0;
+}
+
+.article-text {
+  margin-top: 0;
+}
+
+.article-list > li {
+  font-size: 22px;
+}
+
 .container {
   column-count: 3;
   column-gap: 20px;
-  column-rule: 4px dotted rgb(136, 137, 142);
-  margin: 5px;
+  column-rule: var(--line);
+  margin: 5px 5px 30px;
 }
 
 .second-page {
   float: left;
-  display: block;
-    padding-left: 13px;
-    width: 950px;
-    margin: 2px 0px 0px 0px;
-
+  width: 66%;
+  margin: 2px 10px 0 0;
 }
 
-span {
-  color: gray;
-  font-size: 10px;
-  line-height: 1;
+.calculator-section {
+  display: flex;
+  align-items: flex-end;
+}
+
+.calculator-text {
+  margin: 0;
+}
+
+.equation {
+  display: block;
+  margin: 0 auto;
 }
 
 .line {
   margin-top: 10px;
-  border-bottom: 4px dotted rgb(136, 137, 142);
+  border-bottom: var(--line);
 }
 
-.some-text {
+.header-text {
   line-height: 1;
-  color: rgb(50, 49, 50);
+  color: var(--dark-gray);
   font-size: 75px;
-  margin: 20px 240px 0px;
-  color: rgb(50, 49, 50);
-}
-
-h2 {
-  font-weight: lighter;
-  letter-spacing: -1px;
-  margin: 20px 0px 20px 0px;
+  margin: 20px 0;
 }
 
 .title {
   overflow: hidden;
   text-align: center;
   font-size: 10px;
-  margin: 0 200px 10;
 }
 
 .title:before,
@@ -66,7 +158,7 @@ h2 {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
-  border-bottom: 4px dotted rgb(136, 137, 142);
+  border-bottom: var(--line);
   position: relative;
 }
 
@@ -80,177 +172,108 @@ h2 {
   right: -14px;
 }
 
-.image {
-  width: 100%;
-  position: relative;
-}
-
-#at {
-  position: absolute;
-  text-align: center;
-  font-size: 30px;
-  color: rgb(222, 17, 96);
-  padding-left: 10px;
-}
-.some-image {
-  height: 40px;
-  width: 40px;
-  float: left;
-  margin: 0px 7px 7px 0;
-}
-
-h1 {
-  font-size: 60px;
-  font-family: "Akshar", sans-serif;
-  text-align: center;
-}
-
-h3 {
-  letter-spacing: -3px;
-  padding-top: -3px;
-  font-size: 29px;
-  font-family: "Akshar", sans-serif;
-  text-align: left;
-}
- li {
-  line-height: 2;
-  text-indent: 20px;
-  margin: 2em 0 2em 0;
- }
-li::before {
-  color: #e40f0f;
-  content: "■";
-}
-
-ul {
-  padding: 0px;
-  list-style: none;
-}
-
-.imgblock {
-  position: relative;
-  display: inline-block;
-  padding: 20px;
-}
-
-.imgblock img {
-  height: 520px;
-    width: 340px;
- 
-}
-
-.imgblock div {
-  float: left;
-  margin: 7px 1px 7px 0;
-  background: black;
-  color: #fff;
-  border-radius: 2px;
-  position: absolute;
-  right: 0;
-  bottom: 15px;
-  font-size: 16px;
-  padding: 10px 5px;
-}
-
-.quote {
-  line-height: 1;
-  letter-spacing: -2px;
-  color: gray;
-  font-size: 33px;
-  padding-top: 0px;
-  margin: -45px;
-}
-
-blockquote::before {
-  content: "\201c";
-  color: #fff;
-  background-color: rgb(13, 13, 13);
-  font-weight: 900%;
-}
-
-.third-container {
+.figure {
   display: flex;
-  flex-direction: row;
-  margin: 0px 0px;
+  flex-direction: column;
+  width: 50px;
+  height: 100px;
 }
 
-.caption {
-  background-image: url(../images/wheretogo.png);
-  font-size: 25px;
+.first-figure {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 50%;
 }
 
-.block {
-  padding-right: 40%;
+.second-figure {
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(to right, white 20% 60%, var(--red-color) 60% 80%);
 }
 
-.blackdot {
-  padding: 41px;
-  margin-bottom: -124px;
-  width: 6%;
-  margin-left: -19px;
+.figure-text {
+  font-size: 45px;
+  color: gray;
+  margin-left: 10px;
 }
 
 .container-1 {
-  padding-right: 200px;
   display: flex;
+  align-items: center;
 }
 
-.container-1 div {
-  padding: 10px;
-  border: 0px solid silver;
+.container-1 > p {
+  margin: 5px;
 }
 
-h4 {
-  font-size: 20px;
+.container-2 {
+  padding-left: 10px;
 }
 
-#textik {
-  padding: 20px;
+.container-first-box {
+  padding-right: 10px;
+  border-right: var(--line);
 }
 
 .container-3 {
-  float: left;
-  padding-left: 5px;
+  padding-left: 40px;
+  border-left: var(--line);
 }
 
-#section2 {
-  padding: 135px 100px 10px 10px;
+.section2 {
   display: flex;
 }
 
-#line10 {
-  border-left: 4px dotted rgb(136, 137, 142);
-  height: 270px;
-}
-
-#line11 {
-  border-left: 4px dotted rgb(136, 137, 142);
-  height: 270px;
-  margin-right: -20px;
-}
-
-#line12 {
-  border-left: 4px dotted rgb(136, 137, 142);
-  height: 1390px;
-  float: left;
-  margin-left: 6px;
-}
-
-#lightstring {
-  width: 10px;
-  height: 615px;
-}
-
-.helper-text {
-  display: flex;
-  float: inline-end;
-}
-
-li > a {
-  font-size: 22px;
-  text-decoration:none;
+.block {
+  background-color: black;
   color: white;
-  font-size: larger;
-  line-height: normal;
+  font-size: 24px;
+  padding-top: 152px;
+  padding-bottom: 1px;
+  letter-spacing: -1px;
+  border-right: 15px solid var(--red-color);
 }
 
+.links-section {
+  margin-left: 12px;
+}
+
+.links-section > p {
+  font-size: 24px;
+  margin-right: 16px;
+}
+
+.links-section > ul > li::before {
+  margin-right: 8px;
+}
+
+.links-section-text {
+  position: absolute;
+  background-color: var(--red-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 46px;
+  width: 486px;
+  height: 87px;
+  padding-left: 16px;
+  margin-top: 28px;
+}
+
+.white-square {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  background-color: white;
+}
+
+.square {
+  width: 44px;
+  position: absolute;
+  background-image: linear-gradient(45deg, white 50%, var(--color-line) 50%);
+  height: 44px;
+  margin-top: 115px;
+}
